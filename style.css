@@ -1,0 +1,49 @@
+/* General page style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Section boxes */
+section {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Section headers */
+h1 {
+  color: #0077cc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #444;
+  margin-top: 15px;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hover animation for sections */
+section {
+  transition: transform 0.3s ease;
+}
+section:hover {
+  transform: scale(1.02);
+}

@@ -1,22 +1,8 @@
-/* Reset */
-body, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Global */
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
-}
 
 /* Navigation Bar */
 nav {
   background: #0077cc;
-  padding: 10px 20px;
+  padding: 15px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,12 +10,14 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  list-style: none;
 }
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1em;
 }
 nav a:hover {
   text-decoration: underline;
@@ -43,91 +31,23 @@ nav a:hover {
   color: #fff;
 }
 .hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 3em;
+  margin-bottom: 15px;
 }
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.3em;
+  margin-bottom: 25px;
 }
 .hero .btn {
   background: #fff;
   color: #0077cc;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 25px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 .hero .btn:hover {
   background: #f0f0f0;
-}
-
-/* Section Styling */
-section {
-  padding: 50px 20px;
-  margin: 20px auto;
-  max-width: 1000px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-section h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #0077cc;
-}
-
-/* Projects Grid */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-.project-card {
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-.project-card:hover {
-  transform: translateY(-5px);
-}
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #0077cc;
-}
-
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.skills-grid h2 {
-  color: #444;
-  margin-bottom: 10px;
-}
-.skills-grid p {
-  font-size: 0.95em;
-}
-
-/* Contact */
-#contact p {
-  margin: 10px 0;
-  text-align: center;
-}
-#contact i {
-  margin-right: 8px;
-  color: #0077cc;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #0077cc;
-  color: #fff;
-  margin-top: 20px;
+  transform: scale(1.05);
 }

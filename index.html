@@ -3,105 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aishwarya Gopal | Portfolio</title>
+  <title>Aishwarya Gopal | Data Scientist & AI Specialist</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">Aishwarya Gopal</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero">
-  <h1>Hi, I'm Aishwarya Gopal</h1>
-  <p>Turning Data into Strategy ✦ AI ✦ Analytics ✦ Cloud</p>
-  <a href="#projects" class="btn">View My Work</a>
-</header>
-
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Aishwarya Gopal</span></h1>
+      <p class="hero-subtitle">Data Scientist | AI Specialist | Business Analyst</p>
+      <p class="hero-description">Turning complex data into strategic insights through AI, analytics, and cloud technologies</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work!</a>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <i class="fas fa-chart-line"></i>
+        <span>Analytics</span>
+      </div>
+      <div class="floating-card card-2">
+        <i class="fas fa-brain"></i>
+        <span>AI/ML</span>
+      </div>
+      <div class="floating-card card-3">
+        <i class="fas fa-cloud"></i>
+        <span>Cloud</span>
+      </div>
+    </div>
+  </header>
 
   <!-- About Me -->
-  <section id="about">
-    <h1>About Me</h1>
-    <p>I am a Master's student in Artificial Intelligence & Business Analytics at the University of South Florida. 
-    I am passionate about using data to solve business problems, optimize operations, and uncover actionable insights.</p>
-
-    <p>My expertise spans across <strong>data analytics, machine learning, cloud computing, and data visualization</strong>. 
-    I enjoy combining <em>technical problem-solving</em> with <em>strategic decision-making</em> — whether it’s building predictive models, designing cloud-based solutions, or creating dashboards that tell a story.</p>
-
-    <p>Key interests include <strong>predictive analytics, natural language processing, and business intelligence strategy</strong>. 
-    My projects range from <em>airline delay optimization</em> and <em>healthcare data visualization</em> to <em>loan risk prediction</em> and <em>sentiment analysis</em>.</p>
-
-    <p>Beyond academics, I enjoy exploring emerging AI tools, mentoring peers, and contributing to open-source projects. 
-    My goal is to bridge the gap between <strong>data science, business strategy, and innovation</strong>.</p>
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a passionate Master's student in <strong>Artificial Intelligence & Business Analytics</strong> at the University of South Florida, dedicated to transforming data into actionable business solutions.</p>
+          
+          <p>My expertise spans across <strong>data analytics, machine learning, cloud computing, and data visualization</strong>. I thrive at the intersection of <em>technical problem-solving</em> and <em>strategic decision-making</em> ,whether it's building predictive models, designing cloud-based solutions, or creating dashboards that tell compelling stories.</p>
+          
+          <p>My key interests include <strong>predictive analytics, natural language processing, and business intelligence strategy</strong>. Through my projects, I've tackled diverse challenges from <em>airline delay optimization</em> and <em>healthcare data visualization</em> to <em>loan risk prediction</em> and <em>sentiment analysis</em>.</p>
+          
+          <p>Beyond academics, I actively explore emerging AI tools, mentor peers, and contribute to open-source projects. My mission is to bridge the gap between <strong>data science, business strategy, and innovation</strong> to drive meaningful impact.</p>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h1>Projects</h1>
-    <div class="project-grid">
-      <div class="project-card">
-        <h2>Flight Delay Analysis</h2>
-        <p>Analyzed U.S. flight delay patterns using Python, SQL, and Tableau to recommend improvements for a budget airline.</p>
-        <a href="https://github.com/Aishwaryagopal108/US-flight-delays-analysis" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h2>Health Spending & Substance Abuse Visualization</h2>
-        <p>Created Tableau dashboards showing the relationship between global health spending and substance abuse prevalence.</p>
-        <a href="https://github.com/Aishwaryagopal108/DataVisualisation-Project" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h2>Sentiment Analysis on Movie Reviews</h2>
-        <p>Built sentiment analysis models (Logistic Regression, KNN, CNN) to classify movie reviews as positive/negative.</p>
-        <a href="https://github.com/Aishwaryagopal108/Machine-Learning-Project" target="_blank">View on GitHub</a>
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-plane"></i>
+          </div>
+          <h3>Flight Delay Analysis</h3>
+          <p>Analyzed U.S. flight delay patterns using Python, SQL, and Tableau to recommend operational improvements for a budget airline.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Tableau</span>
+          </div>
+          <a href="https://github.com/Aishwaryagopal108/US-flight-delays-analysis" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>Health Spending & Substance Abuse Visualization</h3>
+          <p>Created interactive Tableau dashboards exploring the relationship between global health spending and substance abuse prevalence.</p>
+          <div class="project-tech">
+            <span>Tableau</span>
+            <span>Data Visualization</span>
+            <span>Analytics</span>
+          </div>
+          <a href="https://github.com/Aishwaryagopal108/DataVisualisation-Project" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-film"></i>
+          </div>
+          <h3>Sentiment Analysis on Movie Reviews</h3>
+          <p>Built and compared multiple sentiment analysis models (Logistic Regression, KNN, CNN) to classify movie reviews as positive or negative.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>Machine Learning</span>
+          </div>
+          <a href="https://github.com/Aishwaryagopal108/Machine-Learning-Project" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <div class="skills-grid">
-      <div>
-        <h2><i class="fas fa-code"></i> Programming & Data</h2>
-        <p>Python (Pandas, NumPy, scikit-learn, TensorFlow, NLP), R, SQL (CTEs, Window Functions, PL/SQL)</p>
-      </div>
-      <div>
-        <h2><i class="fas fa-chart-bar"></i> Visualization & BI</h2>
-        <p>Tableau, Power BI, Looker Studio, Qlik Sense, Excel (PivotTables, VBA Macros)</p>
-      </div>
-      <div>
-        <h2><i class="fas fa-cloud"></i> Cloud & Databases</h2>
-        <p>AWS (S3, RDS, QuickSight), Snowflake, Azure Synapse, Google BigQuery</p>
-      </div>
-      <div>
-        <h2><i class="fas fa-brain"></i> Machine Learning & AI</h2>
-        <p>Predictive Modeling, NLP, Generative AI (LLMs, Prompt Engineering), Deep Learning (CNNs, RNNs)</p>
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming & Data</h3>
+          </div>
+          <p>Python (Pandas, NumPy, scikit-learn, TensorFlow, NLP), R, SQL (CTEs, Window Functions, PL/SQL)</p>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Visualization & BI</h3>
+          </div>
+          <p>Tableau, Power BI, Looker Studio, Qlik Sense, Excel (PivotTables, VBA Macros)</p>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud & Databases</h3>
+          </div>
+          <p>AWS (S3, RDS, QuickSight), Snowflake, Azure Synapse, Google BigQuery</p>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-brain"></i>
+            <h3>Machine Learning & AI</h3>
+          </div>
+          <p>Predictive Modeling, NLP, Generative AI (LLMs, Prompt Engineering), Deep Learning (CNNs, RNNs)</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <h1>Contact</h1>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:aishwaryagopal@usf.edu">aishwaryagopal@usf.edu</a></p>
-    <p><i class="fas fa-phone"></i> +1 (656) 231 0953</p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aishwarya-gopal-b1bb2a1a6/" target="_blank">LinkedIn</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/AishwaryaGopal-usf" target="_blank">GitHub</a></p>
-    <p><i class="fas fa-map-marker-alt"></i> Tampa, FL, USA</p>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:aishwaryagopal@usf.edu">aishwaryagopal@usf.edu</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <a href="tel:+16562310953">+1 (656) 231 0953</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/aishwarya-gopal-b1bb2a1a6/" target="_blank">Connect with me</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h3>GitHub</h3>
+              <a href="https://github.com/AishwaryaGopal-usf" target="_blank">View my projects</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Tampa, FL, USA</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send me a message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Aishwarya Gopal | Built with ❤️ using GitHub Pages</p>
+    <div class="container">
+      <p>© 2025 Aishwarya Gopal | Built with ❤️ using GitHub Pages</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/aishwarya-gopal-b1bb2a1a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/AishwaryaGopal-usf" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:aishwaryagopal@usf.edu"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
